@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+
+.images-container__background{
+    background: linear-gradient(to bottom,white,rgba(61, 61, 61, 0.6),white);
+}
+
+.images-container{
+    width:100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__image{
+    width:15%;
+    height: 50%;
+    vertical-align: middle;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+}
+
+.top-searched__items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: flex-start;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-searched__item{
+    text-align: center;
+    width: 30%;
+    font-family: 'Nanum Gothic Coding', monospace;
+    position: relative;
+}
+
+.top-searched__item-image{
+    width: 100%;
+}
+
+.top-searched__item-name{
+    margin: 0.5rem;
+}
+
+.top-searched__item-rank{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.first{
+    background: radial-gradient(rgb(255, 223, 40),white);
+}
+
+.second{
+    background: radial-gradient(rgb(143, 141, 133),white);
+}
+
+.third{
+    background: radial-gradient(rgb(117, 81, 13),white);
+}
+
+.top-searched__item-link {
+    color:inherit;
+    text-decoration: none;
+}
+
+.top-searched__item-link:hover,
+.top-searched__item-link:active{
+    color: #313187;
+}
+
+.top-searched__item-views{
+    margin: 0.2rem 0;
+}
+
+.brands-small-links-container{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.brand-small-link{
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    margin: 0.2rem 0.2rem;
+    padding: 0.5rem;
+}
+
+.brand:hover,
+.brand:active{
+    color: black;
+}
+
+@media (min-width:40rem){
+    .top-searched__item{
+        width: 20%
+    }
+    .top-searched__item-name{
+        font-size: 1rem;
+    }
+    .top-searched__title{
+        margin-top: 2.2rem;
+    }
+}

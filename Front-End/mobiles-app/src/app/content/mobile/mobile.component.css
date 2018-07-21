@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+.specs-container{
+    margin: 0 auto 0 auto;
+    max-width: 1000px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.mobile-specs__image{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 160px;
+    height: auto;
+}
+
+.mobile-specs__para{
+    display: inline-block;
+    align-self: flex-end;
+    font-size: 2rem;
+}
+
+.mobile-specs__para p{
+    margin: 0.4rem 0;
+}
+
+.mobile-specs__para a{
+    text-decoration: none;
+    color: rgb(104, 98, 98);
+}
+
+.feature-value-item{
+    display: flex;
+    font-weight: bold;
+    padding: 0.6rem 1%;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.44);
+    margin: 0.6rem 0;
+}
+
+.feature__name{
+    width: 20%;
+    text-transform: uppercase;
+    padding: 0 0 0 0.7rem;
+}
+
+.feature__value{
+    width: 78%;
+}
+
+.subfeature-value-item{
+    display: flex;
+    font-weight: normal;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+
+.subfeature__name{
+    width: 30%;
+}
+
+.subfeature__value{
+    width: 70%;
+}
+
+@media (min-width: 40rem){
+    .specs-container{
+        padding: 3rem;
+        width: 90%;
+    }
+}

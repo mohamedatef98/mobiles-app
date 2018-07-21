@@ -1,0 +1,40 @@
+<div class="images-container__background">
+    <div class="images-container">
+        <img class="main__image"  src="../../../assets/iphone-x.png" alt="">
+        <img class="main__image" src="../../../assets/samsung-s9.png" alt="">
+        <img class="main__image" src="../../../assets/samsung-note8.png" alt="">
+        <img class="main__image" src="../../../assets/google.png" alt="">
+        <img class="main__image" src="../../../assets/htc.png" alt="">
+    </div>
+</div>
+<h1 class="title">TOP SEARCHED</h1>
+<div class="top-searched__items">
+    <div class="top-searched__item">
+        <a class="top-searched__item-link" routerLink="/mobile/{{second?._id}}">
+            <img class="top-searched__item-image" src="{{second?.Image}}">
+            <h5 class="top-searched__item-name">{{second?.Name}}</h5>
+            <p class="top-searched__item-views">{{second?.views}} View</p>
+        </a>
+        <span class="top-searched__item-rank second">2</span>
+    </div>
+    <div class="top-searched__item">
+        <a class="top-searched__item-link" routerLink="/mobile/{{first?._id}}">
+            <img class="top-searched__item-image" src="{{first?.Image}}">
+            <h5 class="top-searched__item-name">{{first?.Name}}</h5>
+            <p class="top-searched__item-views">{{first?.views}} View</p>
+        </a>
+        <span class="top-searched__item-rank first">1</span>
+    </div>
+    <div class="top-searched__item">
+        <a class="top-searched__item-link" routerLink="/mobile/{{third?._id}}">
+            <img class="top-searched__item-image" src="{{third?.Image}}">
+            <h5 class="top-searched__item-name">{{third?.Name}}</h5>
+            <p class="top-searched__item-views">{{third?.views}} View</p>
+        </a>
+        <span class="top-searched__item-rank third">3</span>
+    </div>
+</div>
+<h1 class="title">ALL BRANDS</h1>
+<div class="brands-small-links-container">
+    <a class="brand-small-link" *ngFor="let brand of brands" routerLink="brand/{{brand}}">{{brand}}</a>
+</div>

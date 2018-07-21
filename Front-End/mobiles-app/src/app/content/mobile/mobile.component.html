@@ -1,0 +1,24 @@
+<div class="specs-container">
+    <div class="first-section">
+        <img class="mobile-specs__image" src="{{mobile?.Image}}" alt="{{mobile?.Name}}}">
+        <div class="mobile-specs__para">
+            <p class="mobiles-specs__para-item">{{mobile?.Name}}</p>
+            <a class="mobiles-specs__para-item" href="https://www.gsmarena.com/{{mobile?.Link}}"
+                     target="_blank">GSMArena Link
+            </a>
+            <p class="mobiles-specs__para-item">Views: {{mobile?.views}}</p>
+        </div>
+    </div>
+    <div class="feature-value-container">
+        <div class="feature-value-item" *ngFor = "let feature of mobile">
+            <div class="feature__name">{{feature?.name}}</div>
+            <div class="feature__value">
+                <div class="subfeature-value-item" *ngFor = "let subFeature of feature.data">
+                    <div class="subfeature__name" [innerHTML]="subFeature?.name"></div>
+                    <div class="subfeature__value" [innerHTML]="subFeature?.data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+.container{
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.part{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    /* height: 100px; */
+}
+
+.icon{
+    width: 30%;
+    margin-left: 5%;
+    border-right: 1px dashed black;
+}
+
+.footer-img__holder{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+}
+
+.footer-img{
+    width: 50%;
+    max-width: 100px;
+}
+
+.footer-title{
+    margin: 0.2rem 0;
+}
+
+.footer-data{
+    padding: 0 0.5rem;
+    text-align: center;
+    width: 60%;
+    margin-right: 5%;
+}
+
+.footer-data__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2vh 0;
+}
+
+.footer-data__link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 0.5rem;
+}
+
+.footer-data__link:hover,
+.footer-data__link:active{
+    color: rgba(0, 0, 0, 0.808);
+    background-color: dimgrey;
+}
+
+.footer-data__paragraph-title{
+    margin: 0;
+    width: 100%;
+    font-size: 0.8rem;
+}

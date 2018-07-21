@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.nav-bar{
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0.1rem 1.5rem 0.1rem 1rem;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar *{
+    vertical-align: middle;
+}
+
+.brand-icon__img-holder{
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: cursive;
+    line-height: 3rem;
+}
+
+.brand-icon__img-holder img{
+    height: 100%;
+}
+
+.brand-icon__title{
+    display: none;
+}
+
+.nav-items__container{
+    display: inline;
+    width: fit-content;
+    list-style: none;
+    text-align: right;
+    float: right;
+    padding: 0;
+    margin: 0.6rem 0;
+}
+
+.nav-items{
+    display: inline;
+    margin: 0 0.1rem;
+}
+
+.nav-items a{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    padding: 0.4rem;
+    vertical-align: middle;
+}
+
+.nav-items a:hover,
+.nav-items a:active{
+    background-color: rgb(78, 74, 74);
+}
+
+.nav-search{
+    width: 6.5rem;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    height: 1.9rem;
+    padding: 0 0.3rem;
+}
+
+.nav-search:focus,
+.nav-search:active{
+    outline: none;
+    background-color: blanchedalmond;
+}
+
+.nav-search + button {
+    height: 1.9rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 0;
+    margin: 0 0 0 0.1rem;
+}
+
+.nav-search + button:hover{
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.nav-search + button img{
+    height: 100%;
+}
+
+@media (min-width: 40rem){
+    .nav-bar{
+        padding-right: 2rem;
+    }
+
+    .brand-icon__title{
+        display: inline;
+        vertical-align: super;
+        color: rgb(218, 218, 218);
+        margin: 0 0 0 0.5rem;
+        font-size: 2rem;
+    }
+
+    .nav-items{
+        margin: 0 1rem;
+    }
+    
+    .nav-search{
+        width: 12rem;
+    }
+}
+
+@media(max-width:50rem){
+    .brand-icon__title{
+        font-size: 1rem;
+    }
+}

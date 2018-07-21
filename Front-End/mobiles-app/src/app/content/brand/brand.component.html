@@ -1,0 +1,10 @@
+<h1 class="brand-title">{{brand}}</h1>
+<div class="mobiles-container">
+    <div class="mobile-container" *ngFor="let mobile of mobiles">
+        <a class="mobile-link" routerLink="/mobile/{{mobile['_id']}}">
+            <img class="mobile-image" src="{{mobile['Image']}}" alt="{{mobile['Name']}}">
+            <p class="mobile-name">{{mobile['Name']}}</p>
+            <p class="mobile-views">View: {{mobile['views']}}</p>
+        </a>
+    </div>
+</div>
